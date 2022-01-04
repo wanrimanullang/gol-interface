@@ -76,7 +76,7 @@ interface ComponentProps extends CompositeImageProps {
 }
 
 export const getImageUrl = (base: string, imageSrc: string, resolution?: Resolution): string =>
-  `${base}${imageSrc}${resolution ? `@${resolution}.jpg` : '.jpg'}`
+  `${base}${imageSrc}${resolution ? `@${resolution}.png` : '.png'}`
 
 export const getSrcSet = (base: string, imageSrc: string) => {
   return `${getImageUrl(base, imageSrc)} 512w, 
