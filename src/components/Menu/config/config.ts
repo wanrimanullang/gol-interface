@@ -6,7 +6,7 @@ export type ConfigMenuItemsType = MenuItemsType & { hideSubNav?: boolean }
 
 const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
-    label: t('GolSwap'),
+    label: t('KKKSwap'),
     icon: 'Swap',
     href: '/swap',
     showItemsOnMobile: false,
@@ -22,7 +22,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     ],
   },
   {
-    label: t('GolFarm'),
+    label: t('KKKFarm'),
     href: '/farms',
     icon: 'Earn',
     items: [
@@ -76,24 +76,24 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   //     },
   //   ],
   // },
-  {
-    label: '',
-    href: '',
-    icon: 'More',
-    hideSubNav: true,
-    items: [
-      {
-        label: t('Blog'),
-        href: 'https://medium.com/@gol.finance',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-      {
-        label: t('Docs'),
-        href: 'https://golfinance.gitbook.io/',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-    ],
-  },
+  // {
+  //   label: '',
+  //   href: '',
+  //   icon: 'More',
+  //   hideSubNav: true,
+  //   items: [
+  //     {
+  //       label: t('Blog'),
+  //       href: 'https://medium.com/@gol.finance',
+  //       type: DropdownMenuItemType.EXTERNAL_LINK,
+  //     },
+  //     {
+  //       label: t('Docs'),
+  //       href: 'https://golfinance.gitbook.io/',
+  //       type: DropdownMenuItemType.EXTERNAL_LINK,
+  //     },
+  //   ],
+  // },
 ]
 
 export default config
